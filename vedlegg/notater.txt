@@ -2,6 +2,8 @@ Fargekoder:
 
 Gull-gul kode: #e6bd43
 
+Gråhvit: #F7F7F7
+
 Gråsvart: #252525
 
 Svart: #000

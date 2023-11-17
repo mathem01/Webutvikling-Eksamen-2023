@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /*max-width: 1400px;*/
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: block;
+    margin: 0 0 1rem 0;
+    padding: 1rem 1rem 0 1rem;
+}
+
+#top-menu, footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top-menu ul{
+    margin: 0;
+}
+
+#top-menu ul li, .social-icons li{
+    display: inline-block;
+}
+
+#top-menu ul li a, footer ul li a {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.logo {
+    width: 100px;
+}
+
+.current {
+    text-decoration-line: underline;
+    text-decoration-color: #e6bd43;
+    /* border-bottom: 3px solid #e6bd43; */
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    background-color: #e6bd43;
+    font-weight: bold;
+}
+
+.map {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+#cover-img {
+    display: flex;
+    flex-direction: row-reverse;
+    /* background: url(https://placehold.co/400x150) no-repeat;
+    background-size: 100%; */
+    background-color: #F7F7F7;
+    width: 100%;
+}
+
+#about {
+    display: inline-block;
+    padding: 2rem;
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.75);
+    width: 50%;
+}
+
+#about p {
+    order: -1;
+}
+
+#services, #branding, #design, #development {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 3rem 1rem 1rem 1rem;
+    margin: 0;
+    gap: 1rem;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem 2rem 1rem;
+    gap: 2rem;
+    background-color: #F7F7F7;
+}
+
+#services h2, #clients h2, #branding h2, #design h2, #development h2, #contact h2 {
+    width: 100%;
+}
+
+#services h2, #clients h2, #contact h2 {
+    margin: auto;
+    text-align: center;
+}
+
+#contact article {
+    flex-basis: 40%;
+}
+
+
+/* https://www.geeksforgeeks.org/how-to-exclude-particular-class-name-from-css-selector/ */
+#contact label, #contact input:not(.button), #contact textarea {
+    display: block;
+    width: 100%;
+    margin: 0.75rem 0;
+}
+
+#contact input, #contact textarea {
+    padding: 0.5rem;
+    border-style: none;
+}
+
+#contact textarea {
+    padding: 0.5rem;
+    resize: vertical;
+}
+
+/* https://stackoverflow.com/questions/9382245/how-to-disable-textarea-resizing */
+#contact input:not() {
+    display: block;
+}
+
+#contact ul {
+    padding: 0;
+}
+
+#contact li i, #contact li p, #contact li a {
+    display: inline-block;
+    margin: 0.5rem 0.5rem
+}
+
+#contact li a {
+    text-decoration: underline;
+    color: blue;
+}
+
+#services article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 2rem 0;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+#services article h3 {
+    margin: 0.5rem;
+}
+
+#services article i {
+    order: -1;
+    font-size: 1.5rem;
+}
+
+#clients {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #e6bd43;
+    gap: 2rem;
+    padding: 3rem 0 2rem 0;
+}
+
+article img{
+    order: -1
+}
+
+footer {
+    background-color: #252525;
+    color: #fff;
+    margin: 0;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 1.5rem;
+
+}
