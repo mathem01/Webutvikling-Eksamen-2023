@@ -24,26 +24,39 @@ ul {
 header {
     display: block;
     margin: 0;
+    padding: 0;
+}
+
+#top-menu {
     padding: 1rem;
 }
 
 #top-menu, footer {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
-#top-menu ul{
+#top-menu ul, .social-icons{
     margin: 0;
+    padding: 0;
 }
 
-#top-menu ul li, .social-icons li{
+#top-menu ul li {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.social-icons li {
     display: inline-block;
+    margin: 0 0.5rem;
 }
 
-#top-menu ul li a, footer ul li a {
+#top-menu ul li a, .social-icons li a {
     display: inline-block;
     margin: 0 0.5rem;
 }
@@ -179,6 +192,10 @@ header {
     gap: 1rem;
 }
 
+.products:has(article) {
+    gap: 2rem;
+}
+
 /* https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/ */
 .products article {
     display: flex;
@@ -189,7 +206,8 @@ header {
 
     min-width: 200px;
     max-width: 692px;
-    flex: 0.5 0 200px;
+    /* flex: 0.5 0 200px; */
+    flex: 1 1 346px;
 }
 
 .products article > img {
@@ -307,6 +325,21 @@ footer {
 
 .social-icons li a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
 
+}
+
+@media only screen and (min-width: 650px) {
+    #top-menu, footer {
+        flex-direction: row;
+    }
+
+    #topmenu ul li {
+        margin: 0;
+    }
+
+    #top-menu ul li, .social-icons li{
+        display: inline-block;
+        
+    }
 }
