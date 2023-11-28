@@ -99,7 +99,7 @@ header > section, header > div {
 #top-menu ul li {
     display: block;
     text-align: center;
-    margin: 0.5rem 0;
+    margin: 0.75rem 0;
 }
 
 .social-icons li {
@@ -234,7 +234,7 @@ header > section, header > div {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-end;
     padding: 5rem 1rem 1rem 1rem;
     margin: 0;
@@ -365,8 +365,8 @@ header > section, header > div {
     align-items: center;
     justify-content: flex-end;
     margin: 2rem 0;
-    flex-basis: 20%;
     text-align: center;
+    max-width: 300px;
 }
 
 #services article h3 {
