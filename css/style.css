@@ -159,6 +159,26 @@ header > section, header > div {
     height: 200px;
 }
 
+.video-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/desktop_phone_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F7F7F7;
+}
+
+.video-container video {
+    display: none;
+
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    top: -50px;
+}
+
 .cover {
     display: flex;
     width: 100%;
@@ -169,6 +189,14 @@ header > section, header > div {
     gap: 0.5rem;
     padding: 2.5rem 2rem;
     text-align: center;
+}
+
+/* https://codepen.io/Fugamma/pen/bLrwYj */
+/* https://stackoverflow.com/questions/40204305/how-to-overlay-text-on-background-videos */
+.video-container > .cover {
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .bg-img {
@@ -189,8 +217,6 @@ header > section, header > div {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    /* background: url(https://placehold.co/400x150) no-repeat;
-    background-size: 100%; */
     background-color: #6e6e6e;
     width: 100%;
 }
@@ -443,6 +469,10 @@ footer {
     #top-menu ul li, .social-icons li{
         display: inline-block;
         
+    }
+
+    .video-container video {
+        display: block;
     }
 
     .cover {
