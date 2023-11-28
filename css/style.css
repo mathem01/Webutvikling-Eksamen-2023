@@ -167,6 +167,20 @@ header > section, header > div {
     text-align: center;
 }
 
+.bg-img {
+    background: url("../img/desktop_phone_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F7F7F7;
+}
+
+.bg-img-transparent {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/desktop_phone_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F7F7F7;
+}
+
 .cover-img {
     display: flex;
     flex-direction: row-reverse;
