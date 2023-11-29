@@ -23,13 +23,13 @@
 </head>
 
 <body>
-    <a class="skip-to-content-link" aria-label="Skip the top menu section to reach the main content" href="#main">Skip to content</a>
+    <a class="skip-to-content-link" aria-label="Skip to content of the page" href="#main">Skip to content</a>
     <header>
         <nav id="top-menu">
             <a title="Check latest news" href="index.html"><img class="logo" src="img/logo1.png" alt="Image of company logo"></a>
             <ul>
-                <li><a aria-label="Check out the latest news at our company" title="Check latest news" class="current" href="index.html">Home</a></li>
-                <li><a aria-label="Explore some of our previous jobs" title="Our previous jobs" href="products.html">Portfolio</a></li>
+                <li><a aria-label="Check out the latest news at our home page" title="Check latest news" class="current" href="index.html">Home</a></li>
+                <li><a aria-label="Explore previous jobs in our portfolio" title="Our previous jobs" href="products.html">Portfolio</a></li>
                 <li><a aria-label="Learn more about our company" title="Learn about us" href="about.html">About</a></li>
                 <li><a class="button" aria-label="Contact us through here" title="Contact us here" href="about.html#contact">Contact</a></li>
             </ul>
@@ -39,7 +39,7 @@
             <section id="main" class="cover transparency">
                 <h1>Compeling headline</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                <a class="button" aria-label="Read more information about our company's services" title="Read more about our services" href="about.html#services">Read more about our services</a>
+                <a class="button" aria-label="Read more about our services we offer" title="Read more about our services" href="about.html#services">Read more about our services</a>
             </section>
         </div>
     </header>
@@ -53,30 +53,38 @@
             <article id="about">
                 <h3>About Our Company</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                <a class="button only-border" aria-label="Learn more about our company" title="Read more about our company" href="about.html">Read more about us</a>
+                <a class="button only-border" aria-label="Read more about us" title="Read more about our company" href="about.html">Read more about us</a>
             </article>
         </section>
-        <section id="services">
+        <section id="services" itemscope itemtype="http://schema.org/Service">
             <h2>Our Services</h2>
-            <article>
-                <h3>Branding</h3>
+            <article itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+                <h3 itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+                    <span itemprop="name">Branding</span>
+                </h3>
                 <i class="fa-solid fa-users"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
-            <article>
-                <h3>Branding</h3>
+            <article itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+                <h3 itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+                    <span itemprop="name">Design</span>
+                </h3>
                 <i class="fa-solid fa-cloud-arrow-up"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
-            <article>
-                <h3>Branding</h3>
+            <article itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+                <h3 itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+                    <span itemprop="name">Development</span>
+                </h3>
                 <i class="fa-solid fa-code"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
-            <article>
-                <h3>Branding</h3>
+            <article itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+                <h3 itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+                    <span itemprop="name">Support</span>
+                </h3>
                 <i class="fa-solid fa-wifi"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
         </section>
         <section id="contact">
@@ -86,7 +94,7 @@
                 <input class="button" aria-label="Sign up to receive our company's newsletter" title="Sign up for newsletter" type="submit" value="Sign me up">
             </form>
         </section>
-        <a class="back-to-top-link" role="button" aria-label="Return back to the top of the page" title="Return to top" href="#top-menu"><i class="fa-solid fa-arrow-up-long"></i></a>
+        <a class="back-to-top-link" role="button" aria-label="Return to the top of the page" title="Return to top" href="#top-menu"><i class="fa-solid fa-arrow-up-long"></i></a>
     </main>
     <footer>
         <section>
