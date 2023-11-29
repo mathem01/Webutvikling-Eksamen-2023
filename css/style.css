@@ -14,7 +14,6 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "top top" "main main" "footer footer";
     margin: 0;
-    /* max-width: 1600px; */
     width: 100%;
     height: 100%;
     font-family: "Montserrat", sans-serif;
@@ -30,7 +29,6 @@ header {
     grid-column: 1/4;
     grid-row: 1/2;
 
-    /* display: block; */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -154,8 +152,6 @@ header > section, header > div {
 .current {
     position: relative;
     padding: 0.2rem 0;
-    /* border-bottom: 3px solid #e6bd43; */
-    /* border-bottom: 3px solid #e6bd43; */
     font-weight: bold;
 }
 
@@ -168,7 +164,6 @@ header > section, header > div {
     bottom: 0;
     left: 0;
     background-color: #e6bd43;
-    /* transform: scaleX(0); */
 }
 
 .button {
@@ -190,6 +185,10 @@ header > section, header > div {
     height: 200px;
 }
 
+/* https://codepen.io/Fugamma/pen/bLrwYj */
+/* https://stackoverflow.com/questions/40204305/how-to-overlay-text-on-background-videos */
+/* Her setter jeg opp en container hvor alt som går utenfor blir gjemt med overflow: hidden; */
+/* Bakgrunnen er også et bilde fordi dette er mobilversjonen */
 .video-container {
     width: 100%;
     position: relative;
@@ -201,6 +200,8 @@ header > section, header > div {
     background-color: #F7F7F7;
 }
 
+/* Videoen blir satt til display: none for å skjules på mobilversjonen */
+/* object-fit brukes også til å begrense og skalere størrelsen på videon slik at den ikke dekker alt. */
 .video-container video {
     display: none;
 
@@ -222,8 +223,7 @@ header > section, header > div {
     text-align: center;
 }
 
-/* https://codepen.io/Fugamma/pen/bLrwYj */
-/* https://stackoverflow.com/questions/40204305/how-to-overlay-text-on-background-videos */
+
 .video-container > .cover {
     position: relative;
     top: 0;
@@ -258,6 +258,9 @@ header > section, header > div {
     text-align: center;
 }
 
+/* https://www.w3schools.com/css/css_image_transparency.asp */
+/* Her bruker jeg rgba hvor alpha-verdien brukes til å endre gjennomsiktigheten. */
+/* rgba brukes også for å få en hvit farge i tillegg */
 .transparency {
     background: rgba(255, 255, 255, 0.75);
 }
@@ -284,7 +287,6 @@ header > section, header > div {
     max-width: 400px;
 }
 
-/* https://www.w3schools.com/css/css_image_transparency.asp */
 #about {
     display: inline-block;
     padding: 2rem;
@@ -343,7 +345,6 @@ header > section, header > div {
     gap: 2rem;
 }
 
-/* https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/ */
 .products article {
     display: flex;
     flex-direction: column;
@@ -383,6 +384,7 @@ header > section, header > div {
 }
 
 /* https://www.geeksforgeeks.org/how-to-exclude-particular-class-name-from-css-selector/ */
+/* Her bruker jeg :not() for å bare påvirke input som ikke har .button klassen. */
 #contact label, #contact input:not(.button), #contact textarea {
     display: block;
     width: 100%;
@@ -395,13 +397,17 @@ header > section, header > div {
     border-style: none;
 }
 
+/* https://stackoverflow.com/questions/9382245/how-to-disable-textarea-resizing */
+/* Her bruker jeg resize: vertical for å gjøre tekstfeltet bare skalerbart i en vertikal retning, */
+/* slik at den ikke kan skaleres til høyre hvor kontaktinformasjonen ligger */
 #contact textarea {
     padding: 0.5rem;
     resize: vertical;
 }
 
-/* https://stackoverflow.com/questions/9382245/how-to-disable-textarea-resizing */
 /* https://css-tricks.com/the-css-has-selector/ */
+/* Her bruker jeg :has() for å bare påvirke input som har klassen .button,
+da kan jeg gjøre endringer på BARE input som har denne klassen */
 #contact input:has(.button) {
     display: block;
 }
@@ -502,6 +508,7 @@ footer {
         
     }
 
+    /* Her blir videoen synlig på desktop-versjonen */
     .video-container video {
         display: block;
     }
