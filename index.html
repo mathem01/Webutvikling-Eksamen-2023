@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mathias Hem">
+    <meta name="description" content="Company name eos et accusamus et iusto odio dignissimos ducimus qui blanditiis">
+
+    <meta property="og:url" content="https://companyname.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Compeling Headline Company name">
+    <meta property="og:description" content="Compeling Headline lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua">
+    <meta property="og:image" content="https://companyname.com/img/desktop_phone_bg.jpg">
 
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
@@ -11,19 +19,19 @@
 
     <link rel="icon" type="image/x-icon" href="img/logo1.png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Home</title>
+    <title>Latest news - Company name</title>
 </head>
 
 <body>
-    <a class="skip-to-content-link" href="#main">Skip to content</a>
+    <a class="skip-to-content-link" aria-label="Skip the top menu section to reach the main content" href="#main">Skip to content</a>
     <header>
         <nav id="top-menu">
-            <a href="index.html"><img class="logo" src="img/logo1.png" alt="Image of company logo"></a>
+            <a title="Check latest news" href="index.html"><img class="logo" src="img/logo1.png" alt="Image of company logo"></a>
             <ul>
-                <li><a class="current" href="index.html">Home</a></li>
-                <li><a href="products.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a class="button" href="about.html#contact">Contact</a></li>
+                <li><a aria-label="Check out the latest news at our company" title="Check latest news" class="current" href="index.html">Home</a></li>
+                <li><a aria-label="Explore some of our previous jobs" title="Our previous jobs" href="products.html">Portfolio</a></li>
+                <li><a aria-label="Learn more about our company" title="Learn about us" href="about.html">About</a></li>
+                <li><a class="button" aria-label="Contact us through here" title="Contact us here" href="about.html#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="video-container">
@@ -31,14 +39,9 @@
             <section id="main" class="cover transparency">
                 <h1>Compeling headline</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                <a class="button" href="about.html#services">Read more about our services</a>
+                <a class="button" aria-label="Read more information about our company's services" title="Read more about our services" href="about.html#services">Read more about our services</a>
             </section>
         </div>
-        <!-- <section class="cover bg-img-transparent">
-            <h1>Compeling headline</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-            <a class="button" href="about.html#services">Read more about our services</a>
-        </section> -->
     </header>
     <main>
         <section class="cover">
@@ -50,7 +53,7 @@
             <article id="about">
                 <h3>About Our Company</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                <a class="button only-border" href="about.html">Read more about us</a>
+                <a class="button only-border" aria-label="Learn more about our company" title="Read more about our company" href="about.html">Read more about us</a>
             </article>
         </section>
         <section id="services">
@@ -79,20 +82,20 @@
         <section id="contact">
             <h3>Sign up for our newsletter</h3>
             <form id="news-signup" method="post" action="#" autocomplete="on">
-                <input type="email" id="email" name="email" placeholder="" required>
-                <input class="button" type="submit" value="Sign me up">
+                <input type="email" aria-label="Write your email address here in order to sign up for our newsletter" id="email" name="email" placeholder="" required>
+                <input class="button" aria-label="Sign up to receive our company's newsletter" title="Sign up for newsletter" type="submit" value="Sign me up">
             </form>
         </section>
-        <a class="back-to-top-link" href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
+        <a class="back-to-top-link" role="button" aria-label="Return back to the top of the page" title="Return to top" href="#top-menu"><i class="fa-solid fa-arrow-up-long"></i></a>
     </main>
     <footer>
         <section>
             <img class="logo" src="img/logo1.png" alt="Image of company logo">
             <p>Companyrights Companyname 2023</p>
             <ul class="social-icons">
-                <li><a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a aria-label="Check out our Facebook page" title="Our Facebook" href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a aria-label="Check out our Instagram page" title="Our Instagram" href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a aria-label="Check out our LinkedIn page" title="Our LinkedIn" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </section>
     </footer>

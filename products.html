@@ -4,6 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mathias Hem">
+    <meta name="description" content="Company name eos et accusamus et iusto odio dignissimos ducimus qui blanditiis">
+
+    <meta property="og:url" content="https://companyname.com/products">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Explore Our Previous Jobs at Company name">
+    <meta property="og:description" content="Our previous jobs lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta property="og:image" content="https://companyname.com/img/desktop_phone_bg.jpg">
+
+    <meta property="twitter:card" content="Sjekk ut disse kule skoene fra Shosies">
 
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
@@ -11,19 +21,19 @@
 
     <link rel="icon" type="image/x-icon" href="img/logo1.png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Portfolio</title>
+    <title>Explore Previous Jobs - Company name</title>
 </head>
 
 <body>
-    <a class="skip-to-content-link" href="#main">Skip to content</a>
+    <a class="skip-to-content-link" role="button" aria-label="Skip the top menu section to reach the main content" href="#main">Skip to content</a>
     <header>
         <nav id="top-menu">
-            <a href="index.html"><img class="logo" src="img/logo1.png" alt="Image of company logo"></a>
+            <a title="Check latest news" href="index.html"><img class="logo" src="img/logo1.png" alt="Image of company logo"></a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a class="current" href="products.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a class="button" href="about.html#contact">Contact</a></li>
+                <li><a aria-label="Check out the latest news at our company" title="Check latest news" href="index.html">Home</a></li>
+                <li><a aria-label="Explore some of our previous jobs" title="Our previous jobs" class="current" href="products.html">Portfolio</a></li>
+                <li><a aria-label="Learn more about our company" title="Learn about us" href="about.html">About</a></li>
+                <li><a class="button" aria-label="Contact us through here" title="Contact us here" href="about.html#contact">Contact</a></li>
             </ul>
         </nav>
         <section class="cover-img bg-img-transparent">
@@ -33,12 +43,12 @@
     <main>
         <section id="main" class="products">
             <h2>Explore previous jobs</h2>
-            <a class="button only-border" href="#branding">Branding</a>
-            <a class="button only-border" href="#design">Design</a>
-            <a class="button only-border" href="#development">Development</a>
+            <a class="button only-border" role="button" aria-label="Check out our branding jobs" href="#branding">Branding</a>
+            <a class="button only-border" role="button" aria-label="Check out our design jobs" href="#design">Design</a>
+            <a class="button only-border" role="button" aria-label="Check out our development jobs" href="#development">Development</a>
         </section>
         <section id="branding" class="products">
-            <h2>Branding</h2>
+            <h2 tabindex="0">Branding</h2>
             <article>
                 <h3>Et harum quidem</h3>
                 <img src="https://placehold.co/400x400" alt="Placeholder image">
@@ -57,7 +67,7 @@
             </article>
         </section>
         <section id="design" class="products">
-            <h2>Design</h2>
+            <h2 tabindex="0">Design</h2>
             <article>
                 <h3>Et harum quidem</h3>
                 <img src="https://placehold.co/400x400" alt="Placeholder image">
@@ -72,7 +82,7 @@
             </article>
         </section>
         <section id="development" class="products">
-            <h2>Development</h2>
+            <h2 tabindex="0">Development</h2>
             <article>
                 <h3>Et harum quidem</h3>
                 <img src="https://placehold.co/400x400" alt="Placeholder image">
@@ -82,16 +92,16 @@
                 <img src="https://placehold.co/400x400" alt="Placeholder image">
             </article>
         </section>
-        <a class="back-to-top-link" href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
+        <a class="back-to-top-link" role="button" aria-label="Return back to the top of the page" title="Return to top" href="#top-menu"><i class="fa-solid fa-arrow-up-long"></i></a>
     </main>
     <footer>
         <section>
             <img class="logo" src="img/logo1.png" alt="Image of company logo">
             <p>Companyrights Companyname 2023</p>
             <ul class="social-icons">
-                <li><a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a aria-label="Check out our Facebook page" title="Our Facebook" href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a aria-label="Check out our Instagram page" title="Our Instagram" href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a aria-label="Check out our LinkedIn page" title="Our LinkedIn" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </section>
     </footer>
